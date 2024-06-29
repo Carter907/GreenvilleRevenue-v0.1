@@ -36,6 +36,8 @@ Main METHOD
         VAR currYear = CONVERT TO INT (PROMPT USER("Please enter the contestants for this year"));
         PRINT FORMATTED: previousYear, currYear
           - "Last year's competition had {0} contestants, and this year's has {1} contestants"
+        PRINT FORMATTED: currYear * 25
+          - “Revenue expected this year is {CURRENCY 0}”
         IF (currYear > previousYear)
             PRINT
               - "It is true that this year's competition is bigger than last year's."
